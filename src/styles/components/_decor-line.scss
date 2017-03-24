@@ -1,0 +1,44 @@
+$decor-line-width: 4px;
+$decor-dark-bg: rgba(0,0,0,0.5);
+
+.decor-line {
+    position: relative;
+    height: 12px;
+
+    &:after {
+        content: "";
+        background-image: repeating-linear-gradient(-45deg, white, white $decor-line-width, transparent $decor-line-width, transparent $decor-line-width * 2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        background-image: repeating-linear-gradient(-45deg, $decor-dark-bg, $decor-dark-bg $decor-line-width, transparent $decor-line-width, transparent $decor-line-width * 2);
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.decor-line1 {
+    position: relative;
+    height: 48px;
+
+    &:before {
+        content: "";
+        background-size: 50px 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,103 @@
+.p {
+    margin-bottom: 0.5em;
+}
+
+.f14 {
+
+}
+.f18 {
+
+}
+.f20 {
+
+}
+.f24 {
+    font-size: 24px;
+}
+.f28 {
+    font-size: 28px;
+
+    @include media (w1024) {
+        font-size: 22px;
+    }
+
+    @include media (w768) {
+        font-size: 18px;
+    }
+}
+.f30 {
+
+}
+.f32 {
+    font-size: 32px;
+}
+.f34 {
+    font-size: 34px;
+}
+.f38 {
+
+}
+.f40 {
+
+}
+.f42 {
+
+}
+.f60 {
+
+}
+
+h1 {
+    color: white;
+    font-size: 239px;
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media (w1366) {
+        font-size: 200px;
+    }
+
+    @include media (w1024) {
+        font-size: 150px;
+    }
+
+    @include media (w768) {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 0.53em;
+        text-transform: none;
+        margin-bottom: 0.3em;
+    }
+
+    span {
+        display: block;
+        font-size: 0.7em;
+    }
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 900;
+
+    @include media (w1024) {
+        font-size: 50px;
+    }
+
+    @include media (w768) {
+        font-size: 42px;
+    }
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
