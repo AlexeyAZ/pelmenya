@@ -11,6 +11,54 @@
   </head>
   <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="heading form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="heading form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 - 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 - 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 - 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 - 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 - 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 - 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
     <section class="sec sec1">
       <header class="header">
         <div class="container header__container">
@@ -19,7 +67,7 @@
             <div class="header__item">
               <p class="ta-center">Единственный ресторан народной монокухни</p>
             </div>
-            <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:88006004099">8 800 600-40-99</a><a class="header__link link link_getcall" href="">Заказать звонок</a></div>
+            <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:89218450907">+7(921)845-09-07</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
           </div>
           <div class="header__decor-line decor-line"></div>
         </div>
@@ -33,11 +81,11 @@
           <div class="sec1__title-img"><img src="img/sec1-trip.png" alt=""></div>
           <p class="sec1__title-text">Откройте франшизу заведения из <strong>ТОП-10</strong> Санкт-Петербурга по версии TripAdvisor</p>
         </div>
-        <div class="sec1__btn-container ta-center color-white"><a class="btn-round btn-round_download sec1__btn" href="">Скачать презентацию</a>
+        <div class="sec1__btn-container ta-center color-white"><a class="btn-round btn-round_download sec1__btn js-small-btn" href="">Скачать презентацию</a>
           <p class="f28">PDF-презентация (6,5 Mb)</p>
         </div>
-        <div class="decor-line1 sec1__decor-line1"></div>
       </div>
+      <div class="sec1__decor-line1"></div>
     </section>
     <section class="sec sec2">
       <div class="container ta-center">
@@ -54,15 +102,18 @@
           <li class="sec2__gallery-item">
             <div class="sec2__gallery-img" style="background-image:url(img/sec2-gallery-img2.jpg);"></div>
             <div class="sec2__gallery-text">
-              <h4>Главное блюдо нашего ресторана – пельмени</h4>
-              <p class="f24">В нашем ассортименте их более 27 разновидностей: русские пельмени, манты, хинкали, равиоли, гедза, дим-сам, ханум и вареники.</p>
+              <h4>Качественный сервис и удобство выбора</h4>
+              <p class="f24">
+                Простое оформление заказов при помощи планшета экономит время посетителей и официантов. А система бонусов и лояльности мотивирует возвращаться к нам снова и снова.
+                
+              </p>
             </div>
           </li>
           <li class="sec2__gallery-item">
             <div class="sec2__gallery-img" style="background-image:url(img/sec2-gallery-img3.jpg);"></div>
             <div class="sec2__gallery-text">
-              <h4>Главное блюдо нашего ресторана – пельмени</h4>
-              <p class="f24">В нашем ассортименте их более 27 разновидностей: русские пельмени, манты, хинкали, равиоли, гедза, дим-сам, ханум и вареники.</p>
+              <h4>Авторский минималистичный дизайн. </h4>
+              <p class="f24">Концепция ресторана «Пельмения» проста: «пришел есть – ешь». Ничего не должно отвлекать посетителей от трапезы. Есть только Пельмень и Я. </p>
             </div>
           </li>
         </ul><img class="sec2__bottom-img" src="../img/sec2-img-bottom.png" alt="">
@@ -70,13 +121,13 @@
           <h2 class="sec2__fact-heading">Более <span>20 000</span></h2>
           <p class="f34 sec2__fact-text">гостей ежемесячно посещают наши заведения</p>
           <p class="f34 sec2__fact-title">Посетители вкусно обедают и получают качественный сервис, а мы – легко открываем и окупаем новые рестораны!</p>
-          <div class="sec2__fact-btn-wrap"><a class="btn-round sec2__fact-btn" href="">Узнать подробности</a></div>
+          <div class="sec2__fact-btn-wrap"><a class="btn-round sec2__fact-btn js-small-btn" href="">Узнать подробности</a></div>
         </div>
       </div>
     </section>
     <section class="sec sec3">
-      <div class="sec3__block sec3__block_top color-white">
-        <div class="container ta-center">
+      <div class="sec3__block sec3__block_top color-white"><img class="sec3__block-img sec3__block-img_left" src="img/sec3-bg-left-bottom.png" alt=""><img class="sec3__block-img sec3__block-img_center" src="img/sec3-bg-right-center.png" alt=""><img class="sec3__block-img sec3__block-img_right" src="img/sec3-bg-right-bottom.png" alt="">
+        <div class="container ta-center sec3__container">
           <h2 class="sec3__heading">Ресторан моно-кухни «Пельмения» – авторская кухня в уникальном формате</h2>
           <p class="f32 sec3__title">Петербуржцы полюбили «Пельмению» по трем причинам:</p>
           <div class="sec3__info">
@@ -134,17 +185,83 @@
           </div>
           <div class="sec3__btn-block ta-center">
             <div class="sec3__btn-block-container"><img class="sec3__btn-block-img" src="../img/sec3-decor.png" alt="">
-              <p class="f32 sec3__btn-block-title">С более детальной информацией ознакомьтесь в презентации</p><a class="btn-round" href="">Сохранить презентацию</a>
+              <p class="f32 sec3__btn-block-title">С более детальной информацией ознакомьтесь в презентации</p><a class="btn-round js-small-btn" href="">Сохранить презентацию</a>
             </div>
           </div>
         </div>
+        <div style="height: 50px;background-color:white;"></div>
       </div>
-      <div class="sec3__block sec3__block_bottom">
-        <h2 class="sec3__heading ta-center">Что потребуется для начала работы?</h2>
+      <div class="sec3__block sec3__block_bottom ta-center">
+        <div class="container">
+          <h2 class="sec3__bottom-heading ta-center">Что потребуется для начала работы?</h2>
+          <ul class="sec3__start-list">
+            <li class="sec3__start-item">
+              <div class="sec3__start-heading-container"><img class="sec3__start-heading-img" src="img/sec3-icon5.png" alt="">
+                <p class="sec3__start-heading">4 мес.</p>
+              </div>
+              <p class="sec3__start-text f32">месяца на открытие</p>
+            </li>
+            <li class="sec3__start-item">
+              <div class="sec3__start-heading-container"><img class="sec3__start-heading-img" src="img/sec3-icon6.png" alt="">
+                <p class="sec3__start-heading">500.000 Р</p>
+              </div>
+              <p class="sec3__start-text f32">паушальный взнос</p>
+            </li>
+            <li class="sec3__start-item">
+              <div class="sec3__start-heading-container"><img class="sec3__start-heading-img" src="img/sec3-icon7.png" alt="">
+                <p class="sec3__start-heading">6 млн Р</p>
+              </div>
+              <p class="sec3__start-text f32">общие инвестиции</p>
+            </li>
+          </ul>
+          <p class="sec3__quote">Мы открыли уже 5 ресторанов – и у нас получилось.<br> Получится и у вас!</p>
+        </div>
+        <div class="sec3__invest">
+          <div class="container sec3__invest-container">
+            <p class="f32 color-white sec3__invest-text">На основе нашего опыта гарантируем:<br> Все вложения окупятся на второй год работы.</p><a class="btn-round btn-round_cream sec3__invest-btn js-small-btn" href="">Получить расчет инвестиций</a>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="footer"></footer>
+    <section class="sec sec4">
+      <div class="container ta-center color-white">
+        <h2 class="sec4__heading">Успейте открыть первый ресторан народной моно-кухни в своем городе</h2>
+        <p class="f38 sec4__title">Получите отлаженный бизнес, зарекомендовавший себя на рынке</p>
+        <p class="f38 sec4__subtitle">Проверьте, свободен ли ваш город?</p>
+        <form class="sec4__form" id="bottomForm">
+          <label class="sec4__form-label">
+            <input class="input input_city sec4__form-input" name="city" type="text" placeholder="Ваш город" required="">
+          </label>
+          <label class="sec4__form-label">
+            <input class="input input_phone sec4__form-input" name="phone" type="text" placeholder="Ваш телефон" required="">
+          </label>
+          <label class="sec4__form-label">
+            <input class="input sec4__form-input" name="email" type="email" placeholder="Ваш e-mail" required="">
+          </label>
+          <div class="sec4__btn-container">
+            <button class="btn-round sec4__btn" href="">Проверить город</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
+        <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
+          <div class="footer__social">
+            <p class="footer__social-title">Мы в социальных сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907">+7(921)845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+      </div>
+    </footer>
     <script src="scripts/vendor.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
   </body>
 </html>

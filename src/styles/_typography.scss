@@ -30,12 +30,24 @@
 }
 .f32 {
     font-size: 32px;
+
+    @include media (w768) {
+        font-size: 20px;
+    }
 }
 .f34 {
     font-size: 34px;
+
+    @include media (w1024) {
+        font-size: 30px;
+    }
 }
 .f38 {
+    font-size: 38px;
 
+    @include media (w1024) {
+        font-size: 30px;
+    }
 }
 .f40 {
 
@@ -95,6 +107,10 @@ h2 {
 h3 {
     font-size: 30px;
     font-weight: bold;
+
+    @include media(w768) {
+        font-size: 20px;
+    }
 }
 
 h4 {

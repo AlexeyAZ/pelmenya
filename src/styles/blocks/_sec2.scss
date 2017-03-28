@@ -13,7 +13,7 @@ $sec2-fact-border: #948566;
     padding-top: 50px;
     padding-bottom: 75px;
 
-    @include media(w768) {
+    @include media(w1024) {
         background-image: none;
     }
 
@@ -30,6 +30,7 @@ $sec2-fact-border: #948566;
         z-index: 2;
 
         &_left {
+            display: none;
             left: -100px;
 
             @include media(w1366) {
@@ -42,6 +43,7 @@ $sec2-fact-border: #948566;
         }
 
         &_right {
+            display: none;
             top: 100px;
             right: 0;
 

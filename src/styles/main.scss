@@ -3,12 +3,15 @@
 @import "mixins";
 @import "helpers";
 @import "typography";
+@import "font-awesome/font-awesome";
 
 @import "app";
 @import "components/links";
 @import "components/phone";
 @import "components/decor-line";
 @import "components/btn";
+@import "components/input";
+@import "components/form";
 
 @import "blocks/header";
 @import "blocks/container";
@@ -18,5 +21,6 @@
 @import "blocks/sec2";
 @import "blocks/sec3";
 @import "blocks/sec4";
+@import "blocks/thanks";
 
 @import "sprite";

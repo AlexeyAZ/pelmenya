@@ -1,6 +1,9 @@
 section.sec.sec3
     div.sec3__block.sec3__block_top.color-white
-        div.container.ta-center
+        img(src="img/sec3-bg-left-bottom.png", alt="").sec3__block-img.sec3__block-img_left
+        img(src="img/sec3-bg-right-center.png", alt="").sec3__block-img.sec3__block-img_center
+        img(src="img/sec3-bg-right-bottom.png", alt="").sec3__block-img.sec3__block-img_right
+        div.container.ta-center.sec3__container
             h2.sec3__heading.
                 Ресторан моно-кухни «Пельмения» – авторская кухня в уникальном формате
             p.f32.sec3__title.
@@ -77,8 +80,40 @@ section.sec.sec3
                     img(src="../img/sec3-decor.png", alt="").sec3__btn-block-img
                     p.f32.sec3__btn-block-title.
                         С более детальной информацией ознакомьтесь в презентации
-                    a(href="").btn-round.
+                    a(href="").btn-round.js-small-btn.
                         Сохранить презентацию
-    div.sec3__block.sec3__block_bottom
-        h2.sec3__heading.ta-center.
-            Что потребуется для начала работы?
+        div(style="height: 50px;background-color:white;")
+    div.sec3__block.sec3__block_bottom.ta-center
+        div.container
+            h2.sec3__bottom-heading.ta-center.
+                Что потребуется для начала работы?
+            ul.sec3__start-list
+                li.sec3__start-item
+                    div.sec3__start-heading-container
+                        img.sec3__start-heading-img(src="img/sec3-icon5.png", alt="")
+                        p.sec3__start-heading.
+                            4 мес.
+                    p.sec3__start-text.f32.
+                        месяца на открытие
+                li.sec3__start-item
+                    div.sec3__start-heading-container
+                        img.sec3__start-heading-img(src="img/sec3-icon6.png", alt="")
+                        p.sec3__start-heading.
+                            500.000 Р
+                    p.sec3__start-text.f32.
+                        паушальный взнос
+                li.sec3__start-item
+                    div.sec3__start-heading-container
+                        img.sec3__start-heading-img(src="img/sec3-icon7.png", alt="")
+                        p.sec3__start-heading.
+                            6 млн Р
+                    p.sec3__start-text.f32.
+                        общие инвестиции
+            p.sec3__quote.
+                Мы открыли уже 5 ресторанов – и у нас получилось.<br> Получится и у вас!
+        div.sec3__invest
+            div.container.sec3__invest-container
+                p.f32.color-white.sec3__invest-text.
+                    На основе нашего опыта гарантируем:<br> Все вложения окупятся на второй год работы.
+                a(href="").btn-round.btn-round_cream.sec3__invest-btn.js-small-btn.
+                    Получить расчет инвестиций

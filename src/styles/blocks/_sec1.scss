@@ -1,17 +1,46 @@
 .sec1 {
     background-image: url("../img/sec1-bg.jpg");
     padding-bottom: 80px;
+    z-index: 2;
 
     @include media (w1024) {
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     &__heading {
         margin-bottom: 50px;
     }
 
-    &__decor-line {
-        margin-bottom: 50px;
+    &__decor-line1 {
+        transform: translateY(50%);
+        background-color: $main-purple;
+        //margin-bottom: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 26px;
+        width: 100%;
+
+        &:before,
+        &:after {
+            content: "";
+            background-position: left bottom;
+            background-repeat: repeat-x;
+            position: absolute;
+            left: 0;
+            height: 12px;
+            width: 100%;
+        }
+
+        &:before {
+            background-image: url("../img/decor-line1.png");
+            top: -12px;
+        }
+
+        &:after {
+            background-image: url("../img/decor-line11.png");
+            bottom: -12px;
+        }
     }
 
     &__title {
