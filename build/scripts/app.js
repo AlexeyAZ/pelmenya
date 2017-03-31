@@ -10,6 +10,22 @@ $(function () {
     //start polyfilling
     webshim.polyfill('forms');
 
+    function phoneLink() {
+        var md = new MobileDetect(window.navigator.userAgent);
+        var phoneLink = $(".phone-link");
+
+        if (md.mobile()) {
+            phoneLink.attr("href", "tel:" + $(".phone-link").data("phone"));
+            phoneLink.removeClass("js-small-btn");
+            console.log("mobile");
+        } else {
+            phoneLink.attr("href", "");
+            phoneLink.addClass("js-small-btn");
+            console.log("pc");
+        }
+    }
+    phoneLink();
+
     // form handler
     var body = $("body");
     var name;

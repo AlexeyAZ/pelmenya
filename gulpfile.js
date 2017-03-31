@@ -10,6 +10,7 @@ var plugins = {
     js: [
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js',
+        'bower_components/mobile-detect/mobile-detect.min.js',
     ],
     css: [
         'bower_components/reset-css/reset.css',

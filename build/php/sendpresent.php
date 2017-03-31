@@ -10,13 +10,13 @@ $name = nl2br($_POST['name1']);
 $content = "Заявка с сайта  Пельмения";
 // Формирование заголовка письма
 $subject  = $content;
-$headers  = "From: no-replay@no-replay.ru" . "\r\n";
+$headers  = "From: admin@pelmenia-franchise.ru" . "\r\n";
 $headers .= "Reply-To: Без ответа". "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Arial,sans-serif;'5>";
-$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Письмо с сайта  Век Закона</h2>\r\n";
+$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Письмо с сайта  Пельмения</h2>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
 $msg .= "<p><strong>ФИО:</strong> ".$name."</p>\r\n";
 $msg .= "<p><strong>Город:</strong> ".$city."</p>\r\n";
