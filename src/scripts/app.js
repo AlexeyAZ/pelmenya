@@ -59,14 +59,26 @@ $(function() {
         $("[name=phone1]").val(selfPhone.val());
         $("[name=email1]").val(selfEmail.val());
 
-        $.ajax({
-            type: "POST",
-            url: "php/send.php",
-            data: formData,
-            success: function(data) {
-                //location = "thanks.html";
-            }
-        });
+        $.when(
+            $.ajax({
+                type: "POST",
+                url: "php/send.php",
+                data: formData,
+                success: function(data) {
+                    
+                }
+            }),
+
+            $.ajax({
+                type: "POST",
+                url: "php/sendwe.php",
+                data: formData,
+                success: function(data) {
+                    
+                }
+            })
+        );
+        
 
         body.addClass("form-open");
         $(".form-wrap_big").addClass("form-wrap_open");
@@ -82,8 +94,15 @@ $(function() {
 
     body.on("click", function(e) {
         var self = $(e.target);
+        
 
-        if (self.hasClass("form-wrap") || self.hasClass("form__close")) {
+        if (self.hasClass("form-wrap") || self.hasClass("form__close")){
+            // if (self.hasClass("form-wrap_small")) {
+            //     location = "thanks.html";
+            // } else {
+            //     body.removeClass("form-open");
+            //     $(".form-wrap").removeClass("form-wrap_open");
+            // }
             body.removeClass("form-open");
             $(".form-wrap").removeClass("form-wrap_open");
         }
