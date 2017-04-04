@@ -44,6 +44,15 @@ $(function() {
         }
     });
 
+    body.on("click", function(e) {
+        var self = $(e.target);
+        
+        if (self.hasClass("form-wrap") || self.hasClass("form__close")){
+            body.removeClass("form-open");
+            $(".form-wrap").removeClass("form-wrap_open");
+        }
+    });
+
     $("#smallForm, #bottomForm").submit(function(e) {
         e.preventDefault();
         $(".form-wrap_open").removeClass("form-wrap_open");
@@ -89,22 +98,6 @@ $(function() {
             localStorage.setItem("centoflawname", name + ", ");
         } else {
             localStorage.setItem("centoflawname", "");
-        }
-    });
-
-    body.on("click", function(e) {
-        var self = $(e.target);
-        
-
-        if (self.hasClass("form-wrap") || self.hasClass("form__close")){
-            // if (self.hasClass("form-wrap_small")) {
-            //     location = "thanks.html";
-            // } else {
-            //     body.removeClass("form-open");
-            //     $(".form-wrap").removeClass("form-wrap_open");
-            // }
-            body.removeClass("form-open");
-            $(".form-wrap").removeClass("form-wrap_open");
         }
     });
 
